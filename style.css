@@ -1,0 +1,168 @@
+/* Стили для страницы регистрации */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff8800, #ff6f00);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+form {
+    background-color: transparent;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 2px solid #aa4900;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #aa4900;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f00;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6f00;
+}
+
+button:active {
+    background-color: #ff6f00;
+}
+
+/* Стили для ссылки на вход */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.login-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #aa4900;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #aa4900;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-link a:hover {
+    background-color: #ff6f00;
+    color: #fff;
+}
+
+.register-link a:hover {
+    background-color: #ff6f00;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Стили для выезжающей плашки */
+.notification {
+    position: fixed;
+    bottom: -100px; /* Скрываем уведомление за пределами экрана */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Ширина плашки */
+    max-width: 500px; /* Максимальная ширина плашки */
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: bottom 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+/* Цвета для успеха и ошибки */
+.notification.success {
+    background-color: #4CAF50; /* Зеленый для успешного входа */
+}
+
+.notification.error {
+    background-color: #f44336; /* Красный для ошибки */
+}
+
+/* Анимация появления */
+.notification.show {
+    bottom: 30px; /* Положение уведомления при появлении */
+}
+
+/* Анимация исчезновения */
+.notification.hide {
+    bottom: -100px; /* Положение уведомления при исчезновении */
+}
